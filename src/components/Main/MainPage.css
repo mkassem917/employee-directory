@@ -1,0 +1,37 @@
+table {
+    table-layout: fixed;
+    width: 100%;
+    border-collapse: collapse;
+    border: 3px solid black;
+  }
+  
+  thead th:nth-child(1) {
+    width: 30%;
+    font-family: 'Rock Salt', cursive;
+    font-size: 16px;
+  }
+  
+  thead th:nth-child(2) {
+    width: 20%;
+    font-family: 'Rock Salt', cursive;
+    font-size: 16px;
+  }
+  
+  thead th:nth-child(3) {
+    width: 15%;
+    font-family: 'Rock Salt', cursive;
+    font-size: 16px;
+  }
+  
+  thead th:nth-child(4) {
+    width: 35%;
+    font-family: 'Rock Salt', cursive;
+    font-size: 16px;
+  }
+  
+  th, td {
+    padding: 20px;
+  }
+
+ 
+   
