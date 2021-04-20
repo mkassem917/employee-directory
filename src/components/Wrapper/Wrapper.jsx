@@ -4,7 +4,7 @@ import "./Wrapper.css";
 function Wrapper({children}) {
     return (
         
-            <main className="wrapper">{children}</main>;
+            <main className="wrapper">{children}</main>
         
     );
 };
