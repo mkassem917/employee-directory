@@ -1,22 +1,21 @@
 import React from "react";
 import Navbar from "react-bootstrap/Navbar";
-import Nav from "react-bootstrap/Nav";
 import Form from "react-bootstrap/Form";
-import FormControl from "react-bootstrap/FormControl";
-import Button from "react-bootstrap/Button";
 import "./Navbar.css";
 
-function MyNavbar() {
+function MyNavbar(props) {
   return (
     <>
-    
       <Navbar bg="dark" variant="dark">
-        <Nav className="mr-auto">
-          <Nav.Link href="#home"><Button class = "btn btn-"> Home </Button> </Nav.Link>
-        </Nav>
-        <Form inline>
-          <FormControl type="text" placeholder="Search" className="mr-sm-2" />
-          <Button variant="outline-info">Search</Button>
+        <Form className="inline" onSubmit={props.handleFormSubmit}>
+          <input
+            className="form-control"
+            value={props.value}
+            name="search"
+            onChange={props.handleInputChange}
+            type="search"
+            placeholder="Employee Search"
+          />
         </Form>
       </Navbar>
     </>

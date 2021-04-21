@@ -2,15 +2,15 @@ import React from "react";
 import Table from "react-bootstrap/Table";
 import "./MainPage.css";
 
-function MyMainPage() {
+function MyMainPage(props) {
   return (
     <Table striped bordered hover variant="dark">
       <thead>
         <tr>
-          <th>#</th>
+          <th>image</th>
           <th>First Name</th>
           <th>Last Name</th>
-          <th>Username</th>
+          <th>Phone Number <button className='filter' onClick={props.sortNumber}><i className="fas fa-filter"></i></button></th>
         </tr>
       </thead>
       <tbody>

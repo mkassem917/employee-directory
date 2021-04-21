@@ -3,6 +3,7 @@ import Wrapper from "./components/Wrapper/Wrapper.jsx";
 import Header from "./components/Header/Header.jsx";
 import MyNavbar from "./components/Navbar/Navbar.jsx";
 import MyMainPage from "./components/Main/MainPage";
+import Footer from "./components/Footer/Footer.jsx";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
         <MyNavbar />
         <Header />
         <MyMainPage />
+        <Footer />
       </Wrapper>
     </div>
   );
