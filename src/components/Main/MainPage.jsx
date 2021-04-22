@@ -11,26 +11,27 @@ function MyMainPage(props) {
           <th>First Name</th>
           <th>Last Name</th>
           <th>Phone Number <button className='filter' onClick={props.sortNumber}><i className="fas fa-filter"></i></button></th>
+          onClick={() => props.sortBy("image")}
         </tr>
       </thead>
       <tbody>
         <tr>
-          <td>1</td>
+          <td> onClick={() => props.sortBy("name", "firstName")}</td>
           <td>Moe</td>
           <td>Kassem</td>
-          <td>@test</td>
+          <td>855-1212</td>
         </tr>
         <tr>
-          <td>2</td>
+          <td> onClick={() => props.sortBy("name", "lastName")}</td>
           <td>Tester</td>
           <td>Test</td>
-          <td>@fat</td>
+          <td>855-1313</td>
         </tr>
         <tr>
-        <td>3</td>
+        <td> onClick={() => props.sortBy("phoneNumber")}</td>
           <td>Moe</td>
           <td>Kassem</td>
-          <td>@fat</td>
+          <td>855-1414</td>
         </tr>
       </tbody>
     </Table>
